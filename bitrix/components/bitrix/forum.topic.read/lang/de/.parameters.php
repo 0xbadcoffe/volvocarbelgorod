@@ -1,0 +1,36 @@
+<?
+$MESS["F_SET_PAGE_PROPERTY"] = "Schlüsselwörter und Themenbeschreibung in den Seitenheader hinzufügen";
+$MESS["F_DATE_TIME_FORMAT"] = "Datum- und Zeitformat";
+$MESS["F_DATE_FORMAT"] = "Datumsformat";
+$MESS["F_DISPLAY_PANEL"] = "Buttons für diese Komponente zum administrativen Panel hinzufügen";
+$MESS["F_PAGE_NAVIGATION_SHOW_ALL"] = "Anzeige aller Forumsseiten zulassen";
+$MESS["F_DEFAULT_FID"] = "Forum ID";
+$MESS["F_INDEX_TEMPLATE"] = "Seite mit Foren";
+$MESS["F_DEFAULT_MID"] = "Nachrichten ID";
+$MESS["F_MESSAGE_SEND_TEMPLATE"] = "Seite zum Versenden der Nachrichten";
+$MESS["F_MESSAGE_TEMPLATE"] = "Seite zum Lesen des Themas (mit der Nachricht ID)";
+$MESS["F_MESSAGE_MOVE_TEMPLATE"] = "Seite zum Versenden der Nachrichten";
+$MESS["F_TOPIC_NEW_TEMPLATE"] = "Seite zum Erstellen eines neuen Themas";
+$MESS["F_MESSAGES_PER_PAGE"] = "Beiträge pro Seite";
+$MESS["F_PAGE_NAVIGATION_WINDOW"] = "Anzahl Seiten in der Seitennavigation";
+$MESS["F_PAGEN"] = "Reihenfolge der Seitennavigation";
+$MESS["F_DEFAULT_PATH_TO_SMILE"] = "Pfad zum Ordner mit Smileys relativ zum Root";
+$MESS["F_PM_EDIT_TEMPLATE"] = "Seite mit privaten Nachrichten";
+$MESS["F_PROFILE_VIEW_TEMPLATE"] = "Seite mit dem Userprofil";
+$MESS["F_RSS_TEMPLATE"] = "RSS Seite";
+$MESS["F_SET_NAVIGATION"] = "Breadcrumb-Navigation anzeigen";
+$MESS["F_SHOW_FIRST_POST"] = "Den ersten Beitrag auf jeder Seite anzeigen";
+$MESS["F_IMAGE_SIZE"] = "Größe des Bildanhangs";
+$MESS["F_SUBSCR_LIST_TEMPLATE"] = "Seite mit Abonnements";
+$MESS["F_PAGE_NAVIGATION_TEMPLATE"] = "Vorlagenname für die Seitennavigation";
+$MESS["F_DEFAULT_TID"] = "Themen ID";
+$MESS["F_READ_TEMPLATE"] = "Seite zum Lesen des Themas";
+$MESS["F_LIST_TEMPLATE"] = "Seite mit Themen";
+$MESS["F_TOPIC_MOVE_TEMPLATE"] = "Seite zum Verschieben der Themen";
+$MESS["F_URL_TEMPLATES"] = "URL verwalten";
+$MESS["F_USER_POST_TEMPLATE"] = "Seite mit Userbeiträgen";
+$MESS["F_RATING_SETTINGS"] = "Ranking-Parameter";
+$MESS["F_SHOW_RATING"] = "Das Ranking anzeigen";
+$MESS["F_RATING_ID"] = "Ranking";
+$MESS["F_RATING_ROLES"] = "Nutzergruppen mit der Abstimmungsberechtigung";
+?>

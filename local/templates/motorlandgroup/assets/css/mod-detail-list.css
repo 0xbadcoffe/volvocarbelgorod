@@ -1,0 +1,732 @@
+.content.models {font-family: Volvo Novum, Sans-Serif;}
+.content .car-left {width: 64.9123%;}
+.car-left>.img-wrap {padding-bottom: 60.541%;}
+
+.car-img-clc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	margin-bottom: 19px;
+}
+
+.auto-run-card__item.shadow-box {
+    margin: 0 30px 43px;
+    padding-bottom: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.car-righ {
+    width: calc(100% - 64.9123%);
+    display: flex;
+	flex-wrap: wrap;
+    position: relative;
+}
+
+.car-righ>.img-wrap>img {transition: .2s;}
+
+.car-righ>.img-wrap {
+    width: 50%;
+    padding-bottom: 37.335%;
+	cursor: pointer;
+}
+
+.car-righ>.img-wrap:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background: transparent;
+}
+
+.car-righ>.img-wrap.on-act:after {background: rgba(163, 163, 163, 0.56);}
+
+.car-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	margin: 53px 0 37px;
+}
+
+.car-info-left {max-width: 1275px;}
+
+.car-kompl ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style-type: none;
+	width: 100%;
+	max-width: 840px;
+}
+
+.car-kompl {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	font-size: 1.375rem;
+    margin: 37px 0 63px;
+}
+
+.car-info-mid {max-width: 1280px;margin-top: -30px;}
+.car-kompl li {margin: 19px 0 39px;}
+.car-info-righ {text-align: right;}
+
+.car-price {
+    font-size: 3.313rem;
+    line-height: 4rem;
+    margin: 7px 1px 18px;
+}
+
+.grey-info .zag {color: #B3B3B3;}
+.grey-info .tex {font-size: 1.5rem;margin-top: 11px;}
+.grey-info .item {padding: 53px 35px;}
+
+.grey-info {
+    box-sizing: border-box;
+    display: inline-flex;
+    padding: 0 25px;
+    flex-wrap: wrap;
+	background: #F9F9F9;
+	margin-bottom: 20px;
+}
+
+.car-info-righ a {font-size: 1.375rem;display: inline-block;}
+
+.car-info-righ a.bay {
+    border: 1px #2C7BCA solid;
+    padding: 17px 89px 18px;
+	background: transparent;
+	margin: 14px 0;
+	color: #2C7BCA;
+}
+
+.car-info-righ a.kre {
+    padding-right: 21px;
+    margin: 4px 0;
+    color: #2C7BCA;
+	z-index: 20;
+    position: relative;
+}
+
+.car-info-righ a>i {
+    position: absolute;
+    font-size: 1.7rem;
+    transform: translate(8px, -2.5px);
+    font-style: normal;
+    font-family: monospace;
+}
+
+.slider-auto {
+    margin-top: 60px;
+}
+
+.Name-big {
+    font-family: "Volvo Broad Pro", sans-serif;
+    font-size: 3.688rem;
+    line-height: 100%;
+    color: #000000;
+	margin-right: 20px;
+	display: flex;
+    align-items: flex-end;
+}
+
+.Name-big span {
+    font-family: "Volvo Novum", sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 0 11px 0;
+	margin-left: 10px;
+}
+
+.auto-card__item--links a {
+    position: relative;
+    display: block;
+    width: fit-content;
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #1C88D0;
+    margin-bottom: 21px;
+}
+
+.auto-card__item--links a::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    right: -29px;
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
+}
+
+@media screen and (max-width: 675px) {
+.auto-card__item--links a::after {
+    top: 3px;
+    right: -15px;
+}
+}
+
+@media screen and (max-width: 575px) {
+.auto-card__item--links a::after {
+    width: 6px;
+    height: 10px;
+    top: 4px;
+    right: -14px;
+}
+}
+
+@media screen and (max-width: 1366px) {
+.auto-sale-page .auto-card__item--links a::after {
+    top: 5px;
+}
+}
+
+@media screen and (max-width: 575px) {
+.auto-sale-page .auto-card__item--links a::after {
+    top: 3px;
+}
+}
+
+@media screen and (max-width: 1440px) {
+.auto-card__item--links a {
+    font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 575px) {
+.auto-card__item--links a {
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 100%;
+    color: #1C88D0;
+    margin-bottom: 16px;
+}
+}
+
+@media screen and (max-width: 1366px) {
+	.Name-big {font-size: 2.625rem;}
+	.name-small {font-size: 1rem;}
+}
+
+@media screen and (max-width: 575px) {
+	.Name-big {font-size: 2.5rem;}
+	.name-small {font-size: 0.875rem;}
+}
+
+.name-small {
+    font-size: 1.25rem;
+    line-height: 100%;
+    font-family: "Volvo Novum", sans-serif;
+    color: #525252;
+    margin-bottom: 8px;
+}
+
+.content-cars {
+    padding: 0!important;
+}
+
+.content-cars .auto-run-card__item--char {
+	justify-content: flex-start;
+	flex-wrap:wrap;
+}
+
+
+.auto-run {
+    padding: 0 0 65px 0;
+}
+
+.auto-run-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.auto-run__auto-list {
+    width: 100%;
+}
+
+.auto-run__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 39px 60px 0 8px;
+}
+
+.auto-run-card__item {
+    max-width: 345px;
+    width: 100%;
+    margin: 0 30px 73px;
+}
+
+.auto-run-card__item--img {
+    height: 183px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+}
+
+.brazzers-daddy {
+    position: relative;
+}
+
+.auto-run img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.auto-run-card__item--content {
+    padding: 0 26px 0 26px;
+    text-align: left;
+}
+
+.auto-run-card__item--name {
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.auto-run-card__item--char {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 12px 0 0;
+    margin-bottom: 17px;
+}
+
+.auto-run-card__item--char span {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #525252;
+}
+
+span.disl {
+    font-style: italic;
+}
+
+.auto-run-card__item--price {
+    font-weight: normal;
+    font-size: 1.625rem;
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 15px;
+	font-family: Volvo Novum, sans-serif;
+}
+
+.btn-blue {
+    display: block;
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #1C88D0;
+    border: 1px solid #1C88D0;
+    box-sizing: border-box;
+    padding: 18px 0 20px 0;
+    text-align: center;
+}
+
+.btn-blue span {
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
+    padding: 0 23px 5px 0;
+}
+
+.btn-blue:hover {
+    background: #1C88D0;
+    color: #fff;
+}
+
+.btn-blue:hover span {
+    background: url(../img/svg/arr-white.svg) no-repeat center right;
+}
+
+/*!
+ * jQuery Brazzers Carousel v1.0.0 (http://webdesign-master.ru)
+ * Copyright 2015 WebDesign Master.
+ */
+ 
+.brazzers-daddy:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.brazzers-daddy {
+	position: relative;
+}
+.brazzers-daddy img {
+	width: 100%;
+	position: relative;
+	display: none;
+	top: 0;
+	left: 0;
+	margin-bottom: 10px;
+}
+.brazzers-daddy img:first-child {
+	display: block;
+}
+.tmb-wrap {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+.tmb-wrap .tmb-wrap-table {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.tmb-wrap-table div {
+	display: table-cell;
+	transition: all .3s ease;
+	border-bottom: 5px solid transparent;
+	padding-top: 10px;
+	-webkit-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.tmb-wrap-table div.active {
+	border-color: #FBB254;
+}
+.tmb-wrap-table div:first-child:last-child {
+	border-color: transparent;
+}
+
+.image-wrap {
+    height: 0;
+    padding-bottom: 53%;
+	overflow: hidden;
+}
+
+.tmb-wrap .tmb-wrap-table {
+    display: table;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.image-wrap img {
+	position:absolute;
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+
+.tmb-wrap-table div {
+    margin: 0 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.0);
+}
+
+.tmb-wrap-table div.active {
+    border-color: white;
+}
+
+
+.content-cars span {
+	font-size: 1.25rem;
+}
+
+.car-flx {
+	display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+
+.slider-auto .auto-run-card__item {
+	max-width: 375px;
+}
+
+@media screen and (max-width:875px) {
+	.slider-auto .auto-run-card__item {
+		max-width: calc(100vw - 30px);
+	}
+}
+
+
+
+.slider-auto .slick-prev, .slider-auto .slick-next {
+    position: absolute;
+    display: block;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+/*@media screen and (max-width:1710px) {
+	.slider-auto .slick-arrow {
+		display: none!important;
+	}
+}*/
+
+.slider-auto .slick-arrow {
+    width: 16.5px;
+    height: 33px;
+    z-index: 2;
+    top: 26.5%;
+}
+
+.slider-auto .slick-prev {
+    background: url(../img/svg/prev-sl.svg) no-repeat center;
+    left: -62px;
+}
+
+.slider-auto .slick-next {
+    background: url(../img/svg/next-sl.svg) no-repeat center;
+    right: -62px;
+}
+
+.name-small.blueprice {
+    font-size: 1.58rem;
+    color: #1C88D0;
+    margin-bottom: 13px;
+}
+
+.vig-car-price {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    color: #1C88D0;
+}
+
+.car-flx {
+    justify-content: space-between;
+}
+
+.gvtgc>sup {
+    font-size: 1.668rem;
+}
+
+.gvtgc>span {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1530px){
+	.auto-run__box {
+		padding: 39px 10px 0 10px;
+	}
+}
+@media screen and (max-width: 1440px){
+	.auto-run-card__item--name {
+		font-size: 1.125rem;
+	}
+	
+	.auto-run-card__item--price {
+		font-size: 1.375rem;
+	}
+	
+	.auto-run-card__item--char span {
+		font-size: 0.813rem;
+	}
+}
+@media screen and (max-width: 1210px){
+	.auto-run-card__item--name {
+		font-size: 0.875rem;
+	}
+	
+	.auto-run-card__item--price {
+		font-size: 1.125rem;
+	}
+	
+	.auto-run-card__item--char span {
+		font-size: 0.75rem;
+	}
+	
+	.auto-run-card__item .btn-blue {
+		font-size: 0.875rem;
+		line-height: 100%;
+		padding: 19px 0 20px 0;
+	}
+}
+	
+@media screen and (max-width: 760px){
+	.auto-run-card__item {
+		margin: 0 0 30px 0;
+		width: 48%;
+	}
+	
+	.auto-run-card__item--img {
+		height: 124px;
+	}
+}
+@media screen and (max-width: 575px){
+	.auto-run__box {
+		padding: 39px 6px 0 6px;
+	}
+
+	.auto-run__box .auto-run-card__item:first-child, .auto-run__box .auto-run-card__item:nth-child(2), .auto-run__box .auto-run-card__item:nth-child(3), .auto-run__box .auto-run-card__item:nth-child(4) {
+		display: block;
+	}
+
+	.auto-run-card__item {
+		margin: 0 0 52px 0;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.auto-run-card__item--img {
+		height: 152px;
+		margin-bottom: 15px;
+	}
+	
+	.auto-run-card__item--name {
+		margin-bottom: 13px;
+	}
+	
+	.auto-run-card__item--char {
+		margin-bottom: 13px;
+	}
+	
+	.auto-run-card__item .btn-blue span {
+		background: url(../img/svg/arr-blue.svg) no-repeat center right;
+		padding: 0 15px 3px 0;
+		background-size: 5%;
+	}
+}
+
+@media screen and (min-width: 901px) {
+	.car-righ>.img-wrap:hover:after {background: rgba(163, 163, 163, 0.56);}
+	.car-info-righ a:hover>i {transform: translate(13px, -2.5px);}
+	.car-info-righ a.kre:hover {color: #224996;}
+	.car-info-righ a.bay:hover {background: #2C7BCA;color: #fff;}
+}
+
+@media screen and (max-width: 1740px) {
+	.container.mod-gs {padding-left: 0px;padding-right: 0px;}
+	.car-kompl ul {max-width: 48%;}
+}
+
+@media screen and (max-width: 1275px) {
+	.car-info {justify-content: space-around;}	
+	.car-info-righ {text-align: center;}
+	.car-info-mid {margin-top: 0;}
+}
+
+@media screen and (max-width: 900px) {
+	.car-info-righ a.kre {z-index: auto;}
+	.content .car-left, .content .car-righ {width: 100%;}
+	.car-img-clc {margin-bottom: 0;}
+	.car-righ>.img-wrap {width: calc(100% / 3);padding-bottom: 25%;}
+	.car-info-mid {padding-top: 31px;}
+	.grey-info .zag {font-size: 0.875rem;}
+	.grey-info .tex {font-size: 1.125rem;}
+	.car-price {
+		font-size: 1.563rem;
+		line-height: 2rem;
+		text-align: left;
+		margin-top: 23px;
+		margin-bottom: 10px;
+	}
+	.car-info {margin: 25px 0 45px;}
+	.grey-info {
+		padding-top: 12px;
+		padding-bottom: 29px;
+		margin-bottom: 7px;
+	}
+	.grey-info .item {padding: 12px 0px;width: 100%;}
+	.grey-info .tex {margin-top: 8px;}
+	.car-info-righ {width: 100%;}
+	.car-info-righ a.bay, .car-info-righ a.kre {
+		font-size: 1.25rem;
+		width: calc(100% - 2px);
+		box-sizing: border-box;
+	}
+	.car-info-righ a.bay {padding: 12px 15px 17px;margin-bottom: 17px;}
+	.car-info-righ a>i {font-size: 1.56rem;transform: translate(8px, -1px);}
+	.car-kompl {margin: 25px 0 69px;}
+	.car-kompl ul {max-width: 100%;}
+	.car-kompl li {font-size: 1rem;line-height: 120%;margin: 0px 0 19px;}
+	.vig-car-price {
+		font-size: 1.1rem;
+		text-align: left;
+	}
+
+	.gvtgc>sup {
+		font-size: 0.868rem;
+	}
+	
+	.gvtgc>span {
+		font-size: 1rem;
+	}
+}
+
+
+
+@media (max-width: 1740px) and (min-width:1400px) {
+	.auto-run-card__item {
+		max-width: calc((100% / 3) - 60px);
+		width: 100%;
+		margin: 0 30px 73px;
+	}
+}
+
+@media screen and (max-width:875px) {
+	.slider-auto .slick-arrow {
+		background-color: #F8F8F8!important;
+		width: 36px;
+		height: 36px;
+		border-radius: 100%;
+		position: absolute;
+		top: 265px;
+	}
+	
+	.slider-auto .slick-prev {
+		left: auto!important;
+		right: 75px!important;
+		background: url(../img/to-righ.png) no-repeat center;
+	}
+
+	.slider-auto .slick-next {
+		right: 30px!important;
+		background: url(../img/to-left.png) no-repeat center;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.slider-auto .slick-arrow {
+		top: 200px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.slider-auto .slick-arrow {
+		top: 230px;
+	}
+
+	.name-small.blueprice {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.slider-auto .slick-arrow {
+		top: 240px;
+	}
+}
+

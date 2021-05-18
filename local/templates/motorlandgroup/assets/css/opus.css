@@ -1,0 +1,469 @@
+.auto-description-title {
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 2.125rem;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 37px;
+}
+
+.auto-description__text p {
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 150%;
+    margin-bottom: 36px;
+    color: #000000;
+    margin: 0 0 26px 0;
+}
+
+.so-foto {
+    padding-bottom: 160%;
+}
+
+.so-name {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.ryad-block {
+    width: 100%;
+}
+
+.r-opus {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.auto-description__text {
+    width: 42.398%;
+}
+
+.image-car {
+    width: 49.123%;
+	position: relative;
+}
+
+.image-car-item {
+    width: 100%;
+}
+
+.image-car-item .img-wrap {
+    padding-bottom: 49.286%;
+}
+
+.car-opus>div:not(:last-child) {
+	margin-bottom: 64px;
+}
+
+.car-opus>div:nth-child(even) .fst_l .image-car {order: 1;}
+.car-opus>div:nth-child(even) .fst_l .auto-description__text {order: 0;}
+.car-opus>div:nth-child(odd) .fst_l .image-car {order: 0;}
+.car-opus>div:nth-child(odd) .fst_l .auto-description__text {order: 1;}
+
+.car-opus>div:nth-child(even) .fst_r .image-car {order: 0;}
+.car-opus>div:nth-child(even) .fst_r .auto-description__text {order: 1;}
+.car-opus>div:nth-child(odd) .fst_r .image-car {order: 1;}
+.car-opus>div:nth-child(odd) .fst_r .auto-description__text {order: 0;}
+
+.car-opus>div:nth-child(even) .all_r .image-car {order: 0;}
+.car-opus>div:nth-child(even) .all_r .auto-description__text {order: 1;}
+.car-opus>div:nth-child(odd) .all_r .image-car {order: 0;}
+.car-opus>div:nth-child(odd) .all_r .auto-description__text {order: 1;}
+
+.car-opus>div:nth-child(even) .all_r .image-car {order: 1;}
+.car-opus>div:nth-child(even) .all_r .auto-description__text {order: 0;}
+.car-opus>div:nth-child(odd) .all_r .image-car {order: 1;}
+.car-opus>div:nth-child(odd) .all_r .auto-description__text {order: 0;}
+
+.img-wrap.im-contain>img {
+	object-fit: contain;
+}
+
+
+.auto-description__text a {
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #1C88D0;
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
+    padding: 0px 21px 5px 0;
+}
+
+.auto-description__text a:hover {
+    color: #0565A6;
+    background: url(../img/svg/arr-blue-hover.svg) no-repeat center right;
+}
+
+.image-car.slider-top {
+	background: transparent!important;
+}
+
+.rgs-4, .rgs-3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.rgs-4 .ryad-block {
+    max-width: 360px;
+	margin: 0 20px;
+}
+
+.rgs-3 .ryad-block {
+    max-width: 480px;
+	margin: 0 20px;
+}
+
+.rgs-4 .image-car, .rgs-3 .image-car {
+    width: 100%;
+	margin-bottom: 24px;
+}
+
+.rgs-4 .auto-description__text, .rgs-3 .auto-description__text {
+    width: 100%;
+}
+
+.rgs-4 .auto-description-title, .rgs-3 .auto-description-title {
+    font-weight: normal;
+    font-size: 1.625rem;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.rgs-4 .auto-description__text p, .rgs-3 .auto-description__text p {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 130%;
+    color: #525252;
+}
+
+.rgs-4 .image-car-item .img-wrap, .rgs-3 .image-car-item .img-wrap {
+    padding-bottom: 56.39%;
+}
+
+a.btn-blue {
+    display: block;
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #1C88D0;
+    border: 1px solid #1C88D0;
+    box-sizing: border-box;
+	background: none!important;
+	padding: 18px 40px 20px 40px!important;
+    text-align: center;
+    display: inline-block;
+}
+
+a.btn-blue:hover {
+    background: #1C88D0!important;
+    color: #fff;
+}
+
+a.btn-blue span {
+    background: url(../img/svg/arr-blue.svg) no-repeat center right!important;
+    padding: 0 27px 5px 0;
+}
+
+a.btn-blue:hover span {
+    background: url(../img/svg/arr-white.svg) no-repeat center right!important;
+}
+
+.offer .image-car-item .img-wrap {
+    padding-bottom: 62.739%;
+}
+
+.offer {
+    border: 1px #DADADA solid;
+}
+
+.offer .auto-description__text {
+    padding: 10px 30px;
+}
+
+.auto-credit-table {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+    margin: 40px 0;
+	padding: 10px 0;
+    padding-right: 20px;
+}
+
+.auto-credit-table-item .auto-credit-table-name {
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 130%;
+    color: #525252;
+    padding: 10px 0;
+}
+
+.auto-credit-table-item .auto-credit-table-value {
+    display: table-cell;
+    vertical-align: top;
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 130%;
+    color: #000000;
+    padding: 10px 0;
+}
+
+.offer .auto-credit-name-car {
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 130%;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+form.filter_offer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 57px;
+}
+
+form.filter_offer select {
+    font-family: "Volvo Novum", sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 400;
+    color: #252525;
+    border: none;
+    outline: none;
+}
+
+form.filter_offer select {
+    padding-right: 27px;
+	z-index: 1;
+    background: transparent;
+	cursor: pointer;
+}
+
+.container.emp-text {
+    font-size: 1rem;
+    color: #252525;
+    text-align: center;
+}
+
+.arrowgz {
+	position: relative;
+    margin: 0 49px;
+}
+
+.arrowgz:after {
+    content: '';
+    display: block;
+    width: 16px;
+    background: url(../img/svg/arr-select.svg) no-repeat center;
+    height: 10px;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+form.filter_offer select, form.filter_offer option {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	position: relative;
+	outline: none;
+}
+
+form.filter_offer select::-ms-expand {
+    display: none;
+}
+
+form.filter_offer select:focus,
+form.filter_offer select:hover,
+form.filter_offer option:hover,
+form.filter_offer option:focus {
+  border:none;
+  outline:none;
+  border:transparent;
+}
+
+.rgs-4 .auto-description__text {
+	font-size: 1rem;
+}
+
+.ryad3 .auto-description__text {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /*height: 100%;*/
+}
+
+a.btn-blue {
+    align-self: flex-end;
+}
+
+.ryad3 {
+    height: 100%;
+}
+
+.rgs-3 {
+    margin-bottom: 100px;
+}
+
+.car-opus>div:not(:last-child) {
+    margin-bottom: 64px;
+}
+
+.rgs-3>.ryad-block:not(:last-child) {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1800px) {
+	.rgs-4 {
+		max-width: 1800px!important;
+		justify-content: flex-start;
+	}
+	
+	.rgs-4 .ryad-block {
+		margin: 0 45px;
+	}
+}
+
+@media screen and (min-width: 1830px) {
+	.rgs-3 .ryad-block {
+		margin: 0 60px;
+	}
+	
+	.rgs-3 {
+		max-width: 1830px!important;
+	}
+}
+
+@media screen and (min-width: 1590px) {
+	.rgs-3 {
+		justify-content: flex-start;
+	}
+}
+
+@media screen and (max-width: 1710px) {
+	.offer .image-car-item {
+		margin: 30px;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.auto-description-title {
+		font-size: 2.125rem;
+	}
+	.auto-description__text p {
+		font-size: 	1.125rem;
+	}
+}
+
+@media screen and (max-width: 1130px) {
+	.auto-description-title {
+		margin-bottom: 10px;
+	}
+	.auto-description__text p {
+		margin-bottom: 15px;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.car-opus>div .image-car {order: 0!important;}
+	.car-opus>div .auto-description__text {order: 1!important;}
+	.r-opus {
+		flex-wrap: wrap;
+	}
+	.image-car {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.auto-description__text {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.offer .image-car-item {
+		margin: 0px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.auto-credit-table {
+		border: none!important;
+	}
+	.auto-credit-table div {
+		width: 100%;
+		display: inline-block!important;
+		text-align: center;
+	}
+	.auto-credit-table {
+		padding-right: 0;
+	}
+	.auto-credit-table>div:first-child {
+		border-top: 1px solid #DADADA;
+	}
+	.auto-credit-name-car {
+		width:100%;
+		text-align:center!important;
+		display: inline-block!important;
+	}
+	.auto-credit-table>div {
+		border-bottom: 1px solid #DADADA;
+	}
+	.auto-description-title {
+		font-size: 	1.125rem;
+		line-height: 130%;
+		margin-bottom: 24px;
+	}
+	.auto-description__text p {
+		font-size: 0.875rem;
+		line-height: 130%;
+		margin-bottom: 26px;
+	}
+	.rgs-4 .image-car, .rgs-3 .image-car {
+		margin-bottom: 15px;
+	}
+	.rgs-4 .auto-description-title, .rgs-3 .auto-description-title {
+		font-size: 1rem;
+		text-align: center;
+		margin-bottom: 14px;
+	}
+	.rgs-4 .auto-description__text p, .rgs-3 .auto-description__text p {
+		font-size: 0.875rem;
+		text-align: center;
+	}
+	a.btn-blue {
+		margin: 0 auto!important;
+		font-size: 0.875rem;
+		line-height: 100%;
+	}
+	a.btn-blue span {
+		padding: 20 15px 20px 0!important;
+		background-size: 5%!important;
+	}
+	a.btn-blue:hover span {
+		background: url(../img/svg/arr-white.svg) no-repeat center right!important;
+		background-size: 5%!important;
+	}
+}
+
+@media (max-width: 1740px) and (min-width:1400px) {
+	.rgs-3 .ryad-block {
+		max-width: calc((100% / 3) - 40px);
+	}
+}

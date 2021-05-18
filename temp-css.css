@@ -1,0 +1,40 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.news-list, .news-detail {
+    border: 4px red solid;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.model-elem {
+    margin: 5px;
+    border: 4px blue solid;
+    padding: 10px;
+}
+
+.green {
+    margin: 5px;
+    border: 4px green solid;
+    padding: 10px;
+}
+
+h1 {
+	width:100%; text-align: center;
+}
+
+.first-m {
+	display: flex;
+	justify-content: center;
+}
+
+.first-m>li {
+	margin: 30px;
+}
+
+.not-fond {
+	color:red;
+	border-bottom:1px red solid;
+}

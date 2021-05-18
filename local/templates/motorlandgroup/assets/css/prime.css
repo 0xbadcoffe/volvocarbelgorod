@@ -1,0 +1,66 @@
+.models .title {
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 2.125rem;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.models-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.models__item {
+    display: flex;
+    align-items: flex-end;
+}
+
+.models__item-name {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Volvo Broad Pro", sans-serif;
+    font-size: 3.688rem;
+    line-height: 100%;
+    color: #000000;
+    margin-right: 3px;
+}
+
+.models__item-sub-name {
+    font-family: "Volvo Novum", sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 0 11px 0;
+    max-width: 65px;
+}
+
+@media screen and (max-width: 1366px) {
+	.models__item-name {
+		font-size: 2.625rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.models__item-name {
+		font-size: 2.25rem;
+	}
+	.models__item-sub-name {
+		font-size: 0.625rem;
+		margin: 0 0 12px 0px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.models {
+		display: none;
+	}
+}

@@ -1,0 +1,232 @@
+.auto-list-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.auto-list-box__left {
+    width: 82.9%;
+}
+
+.auto-list .title {
+    font-family: "Volvo Novum", sans-serif;
+    text-align: left;
+    font-weight: normal;
+    font-size: 2.625rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 47px;
+}
+
+.auto-list__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 61px;
+}
+
+.auto-list .auto-card__item {
+    margin: 0 85px 0 0;
+    max-width: 350px;
+	width: 100%;
+}
+
+.auto-card__item--name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.auto-card__item .models__item {
+    margin-right: 20px;
+}
+
+.models__item-name {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Volvo Broad Pro", sans-serif;
+    font-size: 3.688rem;
+    line-height: 100%;
+    color: #000000;
+    margin-right: 3px;
+}
+
+.auto-list .models__item-name {
+    margin-right: 0;
+}
+
+.auto-list .auto-card__item .models__item-sub-name {
+    margin: 0 2px 8px 3px;
+    font-size: 1rem;
+}
+
+.auto-list .models__item-price {
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 130%;
+    color: #525252;
+    max-width: inherit;
+    margin: -4px 0 0 -4px;
+}
+
+.auto-card__item--img.img-wrap {
+    max-width: 350px;
+    padding-bottom: 41.43%;
+}
+
+.auto-list {
+    padding: 61px 0 29px 0;
+}
+
+.models__item {
+    display: flex;
+    align-items: flex-end;
+}
+
+.models__item-sub-name {
+    max-width: 85px;
+    font-family: "Volvo Novum", sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 0 11px 0;
+}
+
+.auto-list .auto-card__item .models__item-sub-name {
+    margin: 0 2px 8px 3px;
+    font-size: 1rem;
+}
+
+.auto-list-box__right .title {
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 2.625rem;
+    line-height: 3.125rem;
+    color: #000000;
+    margin-bottom: 25px;
+    text-transform: none;
+}
+
+.auto-card__item--links {
+    box-sizing: border-box;
+}
+
+.auto-card__item--links a {
+	display: block;
+    position: relative;
+    width: fit-content;
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #1C88D0;
+    margin-bottom: 21px;
+}
+
+.auto-card__item--links a::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    right: -29px;
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
+}
+
+.auto-list-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.auto-list-links a {
+    display: block;
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 130%;
+    color: #525252;
+    text-align: right;
+    width: fit-content;
+    padding: 0 23px 0 0;
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
+    margin-bottom: 25px;
+}
+
+.auto-card__item--links a:hover {
+    color: #0565A6;
+}
+
+.auto-card__item--links {
+    margin-top: 15px;
+}
+@media screen and (max-width: 1800px) {
+	.auto-list-box__right .title {
+		font-size: 2.313rem;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.auto-list .models__item-price {
+		font-size: 1rem;
+		margin: 8px 0 0 -4px;
+	}
+	.auto-card__item {
+		width: 28%!important;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.auto-list .title {
+		font-size: 2rem;
+	}
+	.models__item-name {
+		font-size: 2.625rem;
+	}
+	.auto-list .models__item-price {
+		font-size: 0.875rem;
+		margin: -1px 0 0 -4px;
+		line-height: 100%;
+	}
+	.auto-list .auto-card__item--links a {
+		font-size: 1.125rem;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.auto-list-box__left {
+		width: 100%;
+	}
+	.auto-list-box__right {
+		display: none;
+	}
+	.auto-list .auto-card__item {
+		margin-right: 35px;
+	}
+}
+
+@media screen and (max-width: 675px) {
+	.auto-list__items {
+		flex-direction: column;
+		padding: 0 11px;
+		margin-bottom: 24px;
+	}
+	.auto-list .auto-card__item {
+		max-width: 100%;
+		width: 100%!important;
+		margin-bottom: 25px;
+	}
+	.auto-card__item--img.img-wrap {
+		max-width: 350px;
+		padding-bottom: 145px;
+	}
+}

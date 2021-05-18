@@ -1,0 +1,165 @@
+.content.models {font-family: Volvo Novum, Sans-Serif;}
+.content .car-left {width: 64.9123%;}
+.car-left>.img-wrap {padding-bottom: 60.541%;}
+
+.car-img-clc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	margin-bottom: 19px;
+}
+
+.car-righ {
+    width: calc(100% - 64.9123%);
+    display: flex;
+	flex-wrap: wrap;
+    position: relative;
+}
+
+.car-righ>.img-wrap>img {transition: .2s;}
+
+.car-righ>.img-wrap {
+    width: 50%;
+    padding-bottom: 37.335%;
+	cursor: pointer;
+}
+
+.car-righ>.img-wrap:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background: transparent;
+}
+
+.car-righ>.img-wrap.on-act:after {background: rgba(163, 163, 163, 0.56);}
+
+.car-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	margin: 53px 0 37px;
+}
+
+.car-info-left {max-width: 1275px;}
+
+.car-kompl ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style-type: none;
+	width: 100%;
+	max-width: 840px;
+}
+
+.car-kompl {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	font-size: 1.375rem;
+    margin: 37px 0 63px;
+}
+
+.car-info-mid {max-width: 1280px;margin-top: -30px;}
+.car-kompl li {margin: 19px 0 39px;}
+.car-info-righ {text-align: right;}
+
+.car-price {
+    font-size: 3.313rem;
+    line-height: 4rem;
+    margin: 7px 1px 18px;
+}
+
+.grey-info .zag {color: #B3B3B3;}
+.grey-info .tex {font-size: 1.5rem;margin-top: 11px;}
+.grey-info .item {padding: 53px 35px;}
+
+.grey-info {
+    box-sizing: border-box;
+    display: inline-flex;
+    padding: 0 25px;
+    flex-wrap: wrap;
+	background: #F9F9F9;
+	margin-bottom: 20px;
+}
+
+.car-info-righ a {font-size: 1.375rem;display: inline-block;}
+
+.car-info-righ a.bay {
+    border: 1px #2C7BCA solid;
+    padding: 17px 89px 18px;
+	background: transparent;
+	margin: 14px 0;
+	color: #2C7BCA;
+}
+
+.car-info-righ a.kre {
+    padding-right: 21px;
+    margin: 4px 0;
+    color: #2C7BCA;
+	z-index: 20;
+    position: relative;
+}
+
+.car-info-righ a>i {
+    position: absolute;
+    font-size: 1.7rem;
+    transform: translate(8px, -2.5px);
+    font-style: normal;
+    font-family: monospace;
+}
+
+@media screen and (min-width: 901px) {
+	.car-righ>.img-wrap:hover:after {background: rgba(163, 163, 163, 0.56);}
+	.car-info-righ a:hover>i {transform: translate(13px, -2.5px);}
+	.car-info-righ a.kre:hover {color: #224996;}
+	.car-info-righ a.bay:hover {background: #2C7BCA;color: #fff;}
+}
+
+@media screen and (max-width: 1740px) {
+	.container.mod-gs {padding-left: 0px;padding-right: 0px;}
+	.car-kompl ul {max-width: 48%;}
+}
+
+@media screen and (max-width: 1275px) {
+	.car-info {justify-content: space-around;}	
+	.car-info-righ {text-align: center;}
+	.car-info-mid {margin-top: 0;}
+}
+
+@media screen and (max-width: 900px) {
+	.car-info-righ a.kre {z-index: auto;}
+	.content .car-left, .content .car-righ {width: 100%;}
+	.car-img-clc {margin-bottom: 0;}
+	.car-righ>.img-wrap {width: calc(100% / 3);padding-bottom: 25%;}
+	.car-info-mid {padding-top: 31px;}
+	.grey-info .zag {font-size: 0.875rem;}
+	.grey-info .tex {font-size: 1.125rem;}
+	.car-price {
+		font-size: 1.563rem;
+		line-height: 2rem;
+		text-align: left;
+		margin-top: 23px;
+		margin-bottom: 10px;
+	}
+	.car-info {margin: 25px 0 45px;}
+	.grey-info {
+		padding-top: 12px;
+		padding-bottom: 29px;
+		margin-bottom: 7px;
+	}
+	.grey-info .item {padding: 12px 0px;width: 100%;}
+	.grey-info .tex {margin-top: 8px;}
+	.car-info-righ {width: 100%;}
+	.car-info-righ a.bay, .car-info-righ a.kre {
+		font-size: 1.25rem;
+		width: calc(100% - 2px);
+		box-sizing: border-box;
+	}
+	.car-info-righ a.bay {padding: 12px 15px 17px;margin-bottom: 17px;}
+	.car-info-righ a>i {font-size: 1.56rem;transform: translate(8px, -1px);}
+	.car-kompl {margin: 25px 0 69px;}
+	.car-kompl ul {max-width: 100%;}
+	.car-kompl li {font-size: 1rem;line-height: 120%;margin: 0px 0 19px;}
+}

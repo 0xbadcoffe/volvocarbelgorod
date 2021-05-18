@@ -1,0 +1,132 @@
+.text-bl>div:not(:last-child) {
+	margin-bottom: 60px;
+}
+
+.content-text .title {
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 2.625rem;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.content-text .finance-item__title {
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1.438rem;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.tx-bold {font-weight: bold;}
+.tx-ital {font-style: italic;}
+.tx-bold-ital {font-weight: bold;font-style: italic;}
+
+.upper {text-transform: uppercase;}
+
+.tx-al-ri {text-align: right;}
+.tx-al-ce {text-align: center;}
+.tx-al-ju {text-align: justify;}
+
+.head-hrefs-gz {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    align-items: center;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.head-hrefs-gz a:last-child {
+    padding: 15px 10px;
+}
+
+.head-hrefs-gz .btn-white {
+    border: 1px solid #007bcd;
+    min-width: 230px;
+}
+
+.head-hrefs-gz .btn-white_theme-white-width {
+    max-width: 215px;
+}
+.head-hrefs-gz .btn-white_theme-white {
+    color: white;
+    z-index: 10;
+}
+.head-hrefs-gz .btn-white {
+    font-weight: normal;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s linear;
+    background: transparent;
+}
+
+.centgz .btn-white span.btn-white__text, .th-blue {
+    color: #007bcd!important;
+}
+
+.centgz .btn-white:hover {
+    background: #007bcd;
+}
+
+.centgz .btn-white:hover span.btn-white__text {
+    color: white!important;
+}
+
+.centgz {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+}
+
+@media screen and (max-width: 1750px) {
+	.container.text-bl {
+		box-sizing: border-box;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.content-text .finance-item__title {
+		font-size: 1.25rem;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.content-text .finance-item__title {
+		font-size: 1rem;
+		margin-bottom: 8px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.content-text .finance-item__title {
+		font-size: 0.875rem;
+		margin-bottom: 24px;
+	}
+	
+	.content-text .title {
+		font-size: 1rem;
+		line-height: 130%;
+		margin-bottom: 27px;
+	}
+	
+	.content-text p {
+		font-size: 0.75rem;
+		line-height: 200%;
+		width: 100%;
+	}
+}

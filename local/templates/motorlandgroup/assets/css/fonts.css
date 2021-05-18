@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Volvo Novum SemiLight';
+    src: url('../fonts/VolvoNovum-SemiLight.eot');
+    src: url('../fonts/VolvoNovum-SemiLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VolvoNovum-SemiLight.woff2') format('woff2'),
+        url('../fonts/VolvoNovum-SemiLight.woff') format('woff'),
+        url('../fonts/VolvoNovum-SemiLight.ttf') format('truetype'),
+        url('../fonts/VolvoNovum-SemiLight.svg#VolvoNovum-SemiLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volvo Novum';
+    src: url('../fonts/VolvoNovum-Bold.eot');
+    src: url('../fonts/VolvoNovum-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VolvoNovum-Bold.woff2') format('woff2'),
+        url('../fonts/VolvoNovum-Bold.woff') format('woff'),
+        url('../fonts/VolvoNovum-Bold.ttf') format('truetype'),
+        url('../fonts/VolvoNovum-Bold.svg#VolvoNovum-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volvo Broad Pro';
+    src: url('../fonts/VolvoBroadPro.eot');
+    src: url('../fonts/VolvoBroadPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VolvoBroadPro.woff2') format('woff2'),
+        url('../fonts/VolvoBroadPro.woff') format('woff'),
+        url('../fonts/VolvoBroadPro.ttf') format('truetype'),
+        url('../fonts/VolvoBroadPro.svg#VolvoBroadPro') format('svg');
+    font-weight: 500;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volvo Novum';
+    src: url('../fonts/VolvoNovum-Regular.eot');
+    src: url('../fonts/VolvoNovum-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VolvoNovum-Regular.woff2') format('woff2'),
+        url('../fonts/VolvoNovum-Regular.woff') format('woff'),
+        url('../fonts/VolvoNovum-Regular.ttf') format('truetype'),
+        url('../fonts/VolvoNovum-Regular.svg#VolvoNovum-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volvo Novum';
+    src: url('../fonts/VolvoNovum-Italic.eot');
+    src: url('../fonts/VolvoNovum-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VolvoNovum-Italic.woff2') format('woff2'),
+        url('../fonts/VolvoNovum-Italic.woff') format('woff'),
+        url('../fonts/VolvoNovum-Italic.ttf') format('truetype'),
+        url('../fonts/VolvoNovum-Italic.svg#VolvoNovum-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volvo Novum';
+    src: url('../fonts/VolvoNovum-Medium.eot');
+    src: url('../fonts/VolvoNovum-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VolvoNovum-Medium.woff2') format('woff2'),
+        url('../fonts/VolvoNovum-Medium.woff') format('woff'),
+        url('../fonts/VolvoNovum-Medium.ttf') format('truetype'),
+        url('../fonts/VolvoNovum-Medium.svg#VolvoNovum-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volvo Novum SemiLight';
+    src: url('../fonts/VolvoNovum-SemiLightItalic.eot');
+    src: url('../fonts/VolvoNovum-SemiLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VolvoNovum-SemiLightItalic.woff2') format('woff2'),
+        url('../fonts/VolvoNovum-SemiLightItalic.woff') format('woff'),
+        url('../fonts/VolvoNovum-SemiLightItalic.ttf') format('truetype'),
+        url('../fonts/VolvoNovum-SemiLightItalic.svg#VolvoNovum-SemiLightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volvo Novum';
+    src: url('../fonts/VolvoNovum-LightItalic.eot');
+    src: url('../fonts/VolvoNovum-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VolvoNovum-LightItalic.woff2') format('woff2'),
+        url('../fonts/VolvoNovum-LightItalic.woff') format('woff'),
+        url('../fonts/VolvoNovum-LightItalic.ttf') format('truetype'),
+        url('../fonts/VolvoNovum-LightItalic.svg#VolvoNovum-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volvo Novum';
+    src: url('../fonts/VolvoNovum-MediumItalic.eot');
+    src: url('../fonts/VolvoNovum-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VolvoNovum-MediumItalic.woff2') format('woff2'),
+        url('../fonts/VolvoNovum-MediumItalic.woff') format('woff'),
+        url('../fonts/VolvoNovum-MediumItalic.ttf') format('truetype'),
+        url('../fonts/VolvoNovum-MediumItalic.svg#VolvoNovum-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volvo Novum';
+    src: url('../fonts/VolvoNovum-BoldItalic.eot');
+    src: url('../fonts/VolvoNovum-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VolvoNovum-BoldItalic.woff2') format('woff2'),
+        url('../fonts/VolvoNovum-BoldItalic.woff') format('woff'),
+        url('../fonts/VolvoNovum-BoldItalic.ttf') format('truetype'),
+        url('../fonts/VolvoNovum-BoldItalic.svg#VolvoNovum-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volvo Novum';
+    src: url('../fonts/VolvoNovum-Light.eot');
+    src: url('../fonts/VolvoNovum-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VolvoNovum-Light.woff2') format('woff2'),
+        url('../fonts/VolvoNovum-Light.woff') format('woff'),
+        url('../fonts/VolvoNovum-Light.ttf') format('truetype'),
+        url('../fonts/VolvoNovum-Light.svg#VolvoNovum-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+	font-display: swap;
+}
+

@@ -1,0 +1,182 @@
+.input-select select {
+    width: 100%;
+    padding: 22px 15px;
+    border: none;
+    font-family: "Volvo Novum", sans-serif;
+    color: #525252;
+    outline: none;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 100%;
+    -webkit-appearance: none;
+	background: url(../img/svg/arr-select.svg);
+	background-repeat: no-repeat;
+    background-position: 96% center;
+	cursor: pointer;
+}
+
+.input-select, .input-out {
+    border: 1px solid #DADADA;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.auto-run__auto-list {
+    width: calc(75% + 40px);
+}
+
+.input-chec {
+	margin-bottom:10px;
+}
+
+.input-out input {
+    width: calc(50% - 27px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+}
+
+.input-out input::-webkit-outer-spin-button,
+.input-out input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.filter {
+	max-width: 317px;
+    width: 100vw;
+}
+
+.input-out input:last-child {
+    border-left: 1px solid #DADADA;
+}
+
+.input-out input {
+    width: calc(50% - 43px);
+    padding: 10px 17px;
+    margin: 10px 0;
+    border: none;
+    font-family: "Volvo Novum", sans-serif;
+    color: #525252;
+    outline: none;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 100%;
+}
+
+.filter input[type="submit"] {
+    display: block;
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #1C88D0;
+    border: 1px solid #1C88D0;
+    box-sizing: border-box;
+    padding: 18px 0 20px 0;
+    text-align: center;
+    width: 100%;
+    background: none;
+	cursor: pointer;
+}
+
+.filter input[type="submit"]:hover {
+	background: #1C88D0;
+    color: #fff;
+}
+
+.auto-run__sidebar .breadcrumbs li:not(:last-child):after {
+    content: '-';
+    display: inline-block;
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 100%;
+    color: #2B7BCD;
+    margin: 0 2px 0 4px;
+}
+
+.auto-run__sidebar .breadcrumbs a {
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 100%;
+    color: #2B7BCD;
+}
+
+.auto-run__sidebar .breadcrumbs {
+    position: static;
+    margin-bottom: 43px;
+	display: flex;
+}
+.breadcrumbs {
+    position: absolute;
+    top: 21px;
+    left: 97px;
+    z-index: 1;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.input-chec label {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: block;
+    position: relative;
+    border: 1px #DADADA solid;
+	cursor: pointer;
+    margin-bottom: 6px;
+	margin-left: 8px;
+}
+
+.input-chec {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.input-chec input {
+	display:none;
+}
+
+.input-chec input:checked + label {
+    border: 1px #1C88D0 solid;
+}
+
+.dump {
+    border: 4px red solid;
+    padding: 20px;
+    color: red;
+    font-size: 0.75rem!important;
+}
+
+.dump p {
+    font-size: 0.813rem;
+    font-weight: bold;
+    margin-block-start: 0;
+}
+
+.filter>p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 10px;
+	color: #525252;
+}
+
+@media screen and (max-width: 1090px) {
+	.auto-run__sidebar {
+		width: 100%;
+	}
+	.auto-run-wrap {
+		flex-wrap: wrap;
+	}
+	.filter {
+		max-width: 100%;
+	}
+	.auto-run__auto-list {
+		width: 100%;
+	}
+}
