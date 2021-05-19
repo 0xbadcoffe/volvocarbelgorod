@@ -326,16 +326,12 @@ a.btn-blue {
     margin-bottom: 64px;
 }
 
-.rgs-3>.ryad-block:not(:last-child) {
-    margin-bottom: 0;
-}
-
 @media screen and (min-width: 1800px) {
 	.rgs-4 {
 		max-width: 1800px!important;
 		justify-content: flex-start;
 	}
-	
+
 	.rgs-4 .ryad-block {
 		margin: 0 45px;
 	}
@@ -345,7 +341,7 @@ a.btn-blue {
 	.rgs-3 .ryad-block {
 		margin: 0 60px;
 	}
-	
+
 	.rgs-3 {
 		max-width: 1830px!important;
 	}
@@ -396,7 +392,7 @@ a.btn-blue {
 		width: 100%;
 		text-align: center;
 	}
-	
+
 	.offer .image-car-item {
 		margin: 0px;
 	}
