@@ -1,0 +1,259 @@
+/*
+P O P U P
+*/
+
+.contacts-form-wrap label {
+    display: block;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 130%;
+    color: #525252;
+    margin-bottom: 6px;
+}
+
+.contacts-form-wrap input {
+    min-height: 64px;
+    width: 100%;
+    padding: 0 14px;
+    border: 1px solid #525252;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px 0 23px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #525252;
+}
+
+.contacts-form-wrap input {
+    border: 1px solid #DADADA;
+}
+
+.contacts-form-wrap button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    max-width: 295px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 130%;
+    padding: 19px 0 19px 0;
+    background: #1C88D0;
+    color: #FFFFFF;
+}
+
+.contacts-form-wrap textarea {
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    padding: 15px;
+    resize: none;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #525252;
+    width: 100%;
+    min-height: 192px;
+    outline: none;
+}
+
+.contacts-form__item-double {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1.45%;
+    max-width: 23.685%;
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+.contacts-form__item {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 49.123%;
+    width: 100%;
+    margin-right: 1.45%;
+    margin-bottom: 38px;
+}
+
+.contacts-form-wrap .non-margin {
+    margin-right: 0;
+}
+
+.contacts-form__item-last {
+    margin: -4px 0 0 0;
+}
+
+.jq-checkbox, .jq-radio {
+    vertical-align: -4px;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px 0 0;
+    border: 1px solid #C3C3C3;
+    background: linear-gradient(#FFF, #E6E6E6);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), inset -1px -1px #FFF, inset 1px -1px #FFF;
+    cursor: pointer;
+}
+
+.jq-checkbox, .jq-radio {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.contacts-form-wrap form input {
+    border: 1px solid #DADADA;
+    height: 64px;
+    width: 100%;
+}
+.jq-checkbox input, .jq-radio input {
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+.checkbox {
+    display: inline-block;
+    vertical-align: top;
+    outline: none;
+}
+
+.jq-checkbox, .jq-radio {
+    width: 27px;
+    height: 27px;
+    border: 1px solid #C1C1C1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: transparent;
+}
+
+p.chex {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.chex label {
+    margin: 0;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #C1C1C1;
+    padding: 3px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: transparent;
+    margin-right: 20px;
+    transform: translate(0px, 5px);
+    cursor: pointer;
+}
+
+.chex input + label>i {
+    background: transparent;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 3px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.chex input:checked + label>i {
+    background: #1c88d0;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px!important;
+    height: 1px!important;
+    margin: 0!important;
+    min-height: 0px!important;
+    background: transparent!important;
+    border: none!important;
+    outline: none!important;
+    box-shadow: none!important;
+    opacity: 0;
+}
+.contacts-form-wrap button {
+    margin:0;
+    margin-top: 35px;
+}
+
+.contacts-form-wrap .title {
+    text-align: left;
+    margin-bottom: 57px;
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    font-size: 2.625rem;
+    line-height: 130%;
+    color: #000000;
+}
+
+.contacts-form-wrap button {
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.contacts-form-wrap .btn-blue span {
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
+    padding: 0 23px 5px 0;
+}
+
+.contacts-form-wrap .btn-blue {
+    display: block;
+    font-family: "Volvo Novum", sans-serif;
+    font-weight: normal;
+    color: #1C88D0;
+    border: 1px solid #1C88D0;
+    box-sizing: border-box;
+    padding: 18px 0 20px 0;
+    text-align: center;
+}
+
+.contacts-form-wrap .btn-blue:hover {
+    background: #1C88D0;
+    color: #fff;
+}
+
+.contacts-form-wrap .btn-blue:hover span {
+    background: url(../img/svg/arr-white.svg) no-repeat center right;
+}
+
+@media screen and (max-width: 1490px) {
+    .contacts-form__item-double, .contacts-form__item {
+        margin-right: 1%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contacts-form__item-double, .contacts-form__item {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+
+    .contacts-form-wrap .title {
+        font-size: 1.625rem;
+        line-height: 100%;
+        width: 50%;
+        margin-bottom: 25px;
+    }
+}

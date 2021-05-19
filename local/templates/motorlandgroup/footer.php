@@ -1,4 +1,4 @@
-		<footer>			
+		<footer>
 			<?$APPLICATION->IncludeComponent(
 				"bitrix:menu",
 				"menu-3.0",
@@ -27,7 +27,7 @@
 							"EDIT_TEMPLATE" => ""
 						),
 					false
-					);?> 
+					);?>
 				</div>
 				<div class="addr">
 					<?$APPLICATION->IncludeComponent(
@@ -64,44 +64,78 @@
 				<div class="gen"><a target="_blank" href="https://promo01.ru/">Разработка сайта <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/gen.png" /></a></div>
 			</div>
 		</footer>
-		
+
 		<?// формы обратной связи
+			$APPLICATION->SetAdditionalCss(SITE_TEMPLATE_PATH . "/assets/plugins/intltel/css/intlTelInput.css");
 			$APPLICATION->SetAdditionalCss(SITE_TEMPLATE_PATH . "/assets/css/popup.css");
 			$APPLICATION->SetAdditionalCss(SITE_TEMPLATE_PATH . "/assets/css/forms.css");
-			$arSelect = Array("ID", "IBLOCK_ID", "NAME", "PREVIEW_TEXT", "PROPERTY_*");
-			$arFilter = Array("IBLOCK_ID"=>43, "ACTIVE"=>"Y");
-			$res = CIBlockElement::GetList(Array(), $arFilter, false, Array("nPageSize"=>99), $arSelect);
+			$arSelect = Array("ID", "IBLOCK_ID", "NAME", "PREVIEW_TEXT", "PROPERTY_*", "PROPERTY_VIEW");
+			$arFilter = Array("IBLOCK_ID" => 43, "ACTIVE" => "Y");
+			$res = CIBlockElement::GetList(Array(), $arFilter, false, Array("nPageSize" => 99), $arSelect);
 			while($ob = $res->GetNextElement()) {
 				$arFields = $ob->GetFields();
 				?>
-				<div class="popup-wrap" id="af-<?=$arFields["ID"]?>">
-					<div class="popup">
-						<a href="javascript: void(0);" class="close-popup"></a>
-						<div class="title"><?=$arFields["NAME"]?></div>
-						<div class="desc"></div>
-						<form class="aj-form-send" id="form-<?=$arFields["ID"]?>">
-							<input type="hidden" name="ttl" value="<?=$arFields["NAME"]?>">
-							<input type="hidden" name="mailto" value="<?=$arFields['PROPERTY_223']?>">
-								<?=$arFields["PREVIEW_TEXT"]?>
-							<p class="call-block__policy-form"></p>
-						</form>
-					</div>
-				</div>
+
+                <? if($arFields['PROPERTY_VIEW_VALUE'] == 'small-form'): ?>
+
+                    <div class="popup-wrap" id="af-<?=$arFields["ID"]?>">
+                        <div class="popup small-form">
+                            <a href="javascript: void(0);" class="close-popup"></a>
+                            <div class="title"><img src="<?=SITE_TEMPLATE_PATH?>/assets/img/volvo.png"></div>
+                            <div class="desc"><?=$arFields["NAME"]?></div>
+                            <form class="aj-form-send" id="form-<?=$arFields["ID"]?>">
+                                <input type="hidden" name="ttl" value="<?=$arFields["NAME"]?>">
+                                <input type="hidden" name="mailto" value="<?=$arFields['PROPERTY_223']?>">
+                                <?=$arFields["PREVIEW_TEXT"]?>
+                                <div class="rule">
+                                    <input type="checkbox" name="rule" id="rule" required>
+                                    Даю согласие на обработку своих персональных данных
+                                </div>
+                                <p class="call-block__policy-form"></p>
+                            </form>
+                        </div>
+                    </div>
+
+                <? elseif($arFields['PROPERTY_VIEW_VALUE'] == 'square-form'):?>
+
+                    <div class="popup-wrap" id="af-<?=$arFields["ID"]?>">
+                        <div class="popup square-form">
+                            <a href="javascript: void(0);" class="close-popup">Закрыть</a>
+                            <div class="title"><img src="<?=SITE_TEMPLATE_PATH?>/assets/img/volvo-white.png"></div>
+                            <div class="form-container">
+                                <div class="desc"><?=$arFields["NAME"]?></div>
+                                <form class="aj-form-send" id="form-<?=$arFields["ID"]?>">
+                                    <input type="hidden" name="ttl" value="<?=$arFields["NAME"]?>">
+                                    <input type="hidden" name="mailto" value="<?=$arFields['PROPERTY_223']?>">
+                                    <?=$arFields["PREVIEW_TEXT"]?>
+                                    <div class="rule">
+                                        <input type="checkbox" name="rule" id="rule" required>
+                                        Даю согласие на обработку своих персональных данных
+                                    </div>
+                                    <p class="call-block__policy-form"></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                <? endif; ?>
+
 				<?
 			}
 		?>
-		
+
 	</body>
-	
+
 	<?$APPLICATION->SetAdditionalCss(SITE_TEMPLATE_PATH . "/assets/css/bs64.css");?>
-	
+
 	<script src="<?=SITE_TEMPLATE_PATH?>/assets/js/jquery-3.4.1.min.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/assets/js/slick.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/assets/js/jquery.fancybox.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/assets/js/jQuery.Brazzers-Carousel.min.js"></script>
-	
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.js"></script>
+
+
+	<script src="<?=SITE_TEMPLATE_PATH?>/assets/js/jquery.maskedinput.js"></script>
+	<script src="<?=SITE_TEMPLATE_PATH?>/assets/plugins/intltel/js/intlTelInput.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/assets/js/script.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
@@ -126,8 +160,8 @@
 		</script>
 		<!-- /StreamWood code -->
 	<?}?>
-	
-	
+
+
 	<?if ($APPLICATION->GetPageProperty('MapY') && $APPLICATION->GetPageProperty('MapX')) {
 		$MapY = $APPLICATION->GetPageProperty('MapY');
 		$MapX = $APPLICATION->GetPageProperty('MapX');
@@ -168,7 +202,7 @@
 			}
 		</script>
 	<?}?>
-	
+
 	<script>
 		$('a').each(function(){
 			if ($(this).attr('href') == '#11') {

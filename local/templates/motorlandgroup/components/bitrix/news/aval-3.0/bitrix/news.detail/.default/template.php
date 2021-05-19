@@ -123,48 +123,80 @@ $APPLICATION->SetAdditionalCss(SITE_TEMPLATE_PATH . "/assets/css/slick.css");
 					<?$thi_pg = $_SERVER['HTTP_HOST'] . "" . $arResult['DETAIL_PAGE_URL'];?>
 
 					<div class="popup-wrap" id="pt-<?=$arResult['ID']?>">
-						<div class="popup">
-							<a href="javascript: void(0);" class="close-popup"></a>
-							<div class="title">Купить <?=$arResult['NAME']?></div>
-							<div class="desc"></div>
-							<form class="aj-form-send" id="form-<?=$arResult['ID']?>">
-								<input type="hidden" name="ttl" value="Запрос на покупку со страницы (<?=$thi_pg?>)">
-								<input type="hidden" name="model" value="<?=$arResult['NAME']?>">
-								<input type="hidden" name="mailto" value="7">	
-								<div class="popup-form-item" style="margin-right:5px;">
-									<label for="">Имя</label>
-									<input type="text" required name="name">
-								</div>
-								<div class="popup-form-item">
-									<label for="">Телефон</label>
-									<input type="tel" required name="phone">
-								</div>	
-								<button type="submit"><span>Отправить</span></button>	
-								<p class="call-block__policy-form"></p>
-							</form>
+						<div class="popup land-form">
+                            <a href="javascript: void(0);" class="close-popup">Закрыть</a>
+                            <div class="row">
+                                <div class="banner"></div>
+                            </div>
+                            <div class="row">
+                                <div class="form-container">
+                                    <div class="title"><img src="<?=SITE_TEMPLATE_PATH?>/assets/img/volvo.png"></div>
+                                    <div class="desc">Заполните форму обратной связи,  менеджеры Volvo Car АЛТУФЬЕВО свяжутся с Вами в ближайшее время</div>
+                                    <div class="desc" style="margin-bottom: 5px;">Спецпредложение на <?=$arResult['NAME']?></div>
+                                    <form class="aj-form-send" id="form-<?=$arResult['ID']?>">
+                                        <input type="hidden" name="ttl" value="Запрос на покупку со страницы (<?=$thi_pg?>)">
+                                        <input type="hidden" name="model" value="<?=$arResult['NAME']?>">
+                                        <input type="hidden" name="mailto" value="7">
+                                        <div class="popup-form-item">
+                                            <span class="small-desc">
+                                                Оставьте заявку и успейте купить новый Volvo с выгодой до 200 000 рублей по программе “Трейд-ин”
+                                            </span>
+                                        </div>
+                                        <div class="popup-form-item">
+                                            <input type="text" required name="name" placeholder="Ваше имя">
+                                        </div>
+                                        <div class="popup-form-item">
+                                            <input type="tel" required name="phone">
+                                        </div>
+                                        <button type="submit"><span>Хорошо, жду звонка</span></button>
+                                        <div class="rule">
+                                            <input type="checkbox" name="rule" id="rule" required>
+                                            Даю согласие на обработку своих персональных данных
+                                        </div>
+                                        <p class="call-block__policy-form"></p>
+                                    </form>
+                                </div>
+                            </div>
 						</div>
 					</div>
-					
+
 					<div class="popup-wrap" id="apt-<?=$arResult['ID']?>">
-						<div class="popup">
-							<a href="javascript: void(0);" class="close-popup"></a>
-							<div class="title">Купить <?=$arResult['NAME']?></div>
-							<div class="desc"></div>
-							<form class="aj-form-send" id="form-c-<?=$arResult['ID']?>">
-								<input type="hidden" name="ttl" value="Запрос на покупку в кредит со страницы (<?=$thi_pg?>)">
-								<input type="hidden" name="model" value="<?=$arResult['NAME']?>">
-								<input type="hidden" name="mailto" value="8">	
-								<div class="popup-form-item" style="margin-right:5px;">
-									<label for="">Имя</label>
-									<input type="text" required name="name">
-								</div>
-								<div class="popup-form-item">
-									<label for="">Телефон</label>
-									<input type="tel" required name="phone">
-								</div>	
-								<button type="submit"><span>Отправить</span></button>	
-								<p class="call-block__policy-form"></p>
-							</form>
+						<div class="popup land-form">
+                            <a href="javascript: void(0);" class="close-popup">Закрыть</a>
+                            <div class="row">
+                                <div class="banner"></div>
+                            </div>
+                            <div class="row">
+                                <div class="form-container">
+                                    <div class="title"><img src="<?=SITE_TEMPLATE_PATH?>/assets/img/volvo.png"></div>
+                                    <div class="desc">
+                                        Заполните форму обратной связи, менеджеры Volvo Car АЛТУФЬЕВО свяжутся с Вами в ближайшее время
+                                    </div>
+                                    <form class="aj-form-send" id="form-c-<?=$arResult['ID']?>">
+                                        <input type="hidden" name="ttl" value="Запрос на покупку в кредит со страницы (<?=$thi_pg?>)">
+                                        <input type="hidden" name="model" value="<?=$arResult['NAME']?>">
+                                        <input type="hidden" name="mailto" value="8">
+                                        <div class="popup-form-item">
+                                            <input type="text" required name="name" placeholder="Ваше имя">
+                                        </div>
+                                        <div class="popup-form-item">
+                                            <input type="tel" required name="phone">
+                                        </div>
+                                        <button type="submit"><span>Хорошо, жду звонка</span></button>
+                                        <div class="popup-form-item">
+                                            <span class="small-desc">* При получении заявки после 21.00 звонок специалиста будет осуществлен на следующий день в рабочие часы дилерского центра</span>
+                                        </div>
+                                        <div class="popup-form-item">
+                                            <a href="#" class="small-desc">Выбрать удобное время для звонка</a>
+                                        </div>
+                                        <div class="rule">
+                                            <input type="checkbox" name="rule" id="rule" required>
+                                            Даю согласие на обработку своих персональных данных
+                                        </div>
+                                        <p class="call-block__policy-form"></p>
+                                    </form>
+                                </div>
+                            </div>
 						</div>
 					</div>
 
@@ -182,7 +214,7 @@ $APPLICATION->SetAdditionalCss(SITE_TEMPLATE_PATH . "/assets/css/slick.css");
 						$half = round(count($arResult['PROPERTIES']['AN_KMS']['VALUE']) / 2);
 						foreach ($arResult['PROPERTIES']['AN_KMS']['VALUE'] as $key=>$vale) {?>
 							<li><?=$vale?></li>
-							<?if ($key == $half) {?></ul><ul><?}?> 
+							<?if ($key == $half) {?></ul><ul><?}?>
 						<?}?>
 					</ul>
 				</div>
@@ -213,8 +245,8 @@ $APPLICATION->SetAdditionalCss(SITE_TEMPLATE_PATH . "/assets/css/slick.css");
 <div class="container">
 	<h2 class="title" style="width:100%; text-align:center;">Автомобили в наличии</h2>
 		<?$APPLICATION->IncludeComponent(
-	"bitrix:news.list", 
-	"avaonprime", 
+	"bitrix:news.list",
+	"avaonprime",
 	array(
 		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",

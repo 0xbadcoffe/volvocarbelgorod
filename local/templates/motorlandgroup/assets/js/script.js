@@ -198,14 +198,14 @@ $(".aj-form-send").submit(function() {
         if (json.status == 'success') {
 
 			switch(ids) {
-				case 'form-1221':
-				gtag('event', 'CALL-BACK');
+                case 'form-1221':
+				//gtag('event', 'CALL-BACK');
 				break;
 				case 'form-1217':
-				gtag('event', 'TEST-DRIVE');
+				//gtag('event', 'TEST-DRIVE');
 				break;
 				case 'form-1218':
-				gtag('event', 'OFFER');
+				//gtag('event', 'OFFER');
 				break;
 			}
 
@@ -249,22 +249,39 @@ $(document).mouseup(function(e) {
     }
 });
 
-let phones = [
-    { 'mask': '+7\\ (###) ###-##-##' }
-];
+$.mask.definitions['9']='';
+$.mask.definitions['d']='[0-9]';
+$("input[type=tel]").mask("+7 (ddd) ddd-dd-dd");
 
-$('input[type=tel]').inputmask({
-    mask: phones,
-    greedy: false,
-    definitions: {
-        '#': {
-            validator: '[0-9]',
-            cardinality: 1
-        }
-    }
+var input = document.querySelectorAll("input[type=tel]");
+$.each(input, function (index, value) {
+
+    window.intlTelInput(value, {
+        autoHideDialCode:false,
+        autoPlaceholder:"aggressive",
+        placeholderNumberType:"MOBILE",
+        initialCountry: "ru",
+        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
+            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+        separateDialCode:true,
+        utilsScript: "/local/templates/motorlandgroup/assets/plugins/intltel/js/utils.js",
+        customPlaceholder:function(selectedCountryPlaceholder,selectedCountryData){
+            return '+'+selectedCountryData.dialCode+' '+selectedCountryPlaceholder.replace(/[0-9]/g,'_');
+        },
+    });
 });
 
+$("input[type=tel]").on("close:countrydropdown",function(e,countryData){
+    $(this).val('');
+    //var mask=$(this).closest('.intl-tel-input').find('.selected-dial-code').html()+' '+$(this).attr('placeholder').replace(/[0-9]/g,'d');
+    $(this).mask($(this).attr('placeholder').replace(/[_]/g,'d'));
+});
+
+
 $(document).ready(function() {
+
     $(".auto-run-card__item--img").brazzersCarousel();
 
 

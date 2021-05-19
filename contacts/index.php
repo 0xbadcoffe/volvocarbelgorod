@@ -16,8 +16,8 @@ $APPLICATION->SetTitle("Title");
 			"EDIT_TEMPLATE" => ""
 		),
 	false
-	);?> 
-	
+	);?>
+
 	<div class="contacts-wrap">
         <div class="container">
             <div class="contacts-box">
@@ -35,8 +35,8 @@ $APPLICATION->SetTitle("Title");
 									"EDIT_TEMPLATE" => ""
 								),
 							false
-							);?>, г. 
-							
+							);?>, г.
+
 							<?$APPLICATION->IncludeComponent(
 								"bitrix:main.include",
 								"",
@@ -48,7 +48,7 @@ $APPLICATION->SetTitle("Title");
 							false
 							);?>
 						</p>
-						
+
 						<?$APPLICATION->IncludeComponent(
 							"bitrix:main.include",
 							"",
@@ -59,13 +59,13 @@ $APPLICATION->SetTitle("Title");
 							),
 						false
 						);?>
-                        
+
                     </div>
                     <div class="contacts-info__item">
                         <b>Телефон:</b>
                         <p>
 							<span>Салон:</span>
-							
+
 							<?$APPLICATION->IncludeComponent(
 								"bitrix:main.include",
 								"",
@@ -97,7 +97,7 @@ $APPLICATION->SetTitle("Title");
                 </div>
             </div>
 
-			<?$APPLICATION->SetAdditionalCss(SITE_TEMPLATE_PATH . "/assets/css/forms.css");?>
+			<?$APPLICATION->SetAdditionalCss(SITE_TEMPLATE_PATH . "/assets/css/default-form.css");?>
             <div class="contacts-form-wrap m-bottom">
                 <div class="title">Свяжитесь с нами</div>
                 <form class="aj-form-send" id="form-contacts">
