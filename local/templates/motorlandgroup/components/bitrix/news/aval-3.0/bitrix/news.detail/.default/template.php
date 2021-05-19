@@ -131,7 +131,7 @@ $APPLICATION->SetAdditionalCss(SITE_TEMPLATE_PATH . "/assets/css/slick.css");
                             <div class="row">
                                 <div class="form-container">
                                     <div class="title"><img src="<?=SITE_TEMPLATE_PATH?>/assets/img/volvo.png"></div>
-                                    <div class="desc">Заполните форму обратной связи,  менеджеры Volvo Car АЛТУФЬЕВО свяжутся с Вами в ближайшее время</div>
+                                    <div class="desc">Заполните форму обратной связи,  менеджеры Volvo Car Белгород свяжутся с Вами в ближайшее время</div>
                                     <div class="desc" style="margin-bottom: 5px;">Спецпредложение на <?=$arResult['NAME']?></div>
                                     <form class="aj-form-send" id="form-<?=$arResult['ID']?>">
                                         <input type="hidden" name="ttl" value="Запрос на покупку со страницы (<?=$thi_pg?>)">
@@ -170,7 +170,7 @@ $APPLICATION->SetAdditionalCss(SITE_TEMPLATE_PATH . "/assets/css/slick.css");
                                 <div class="form-container">
                                     <div class="title"><img src="<?=SITE_TEMPLATE_PATH?>/assets/img/volvo.png"></div>
                                     <div class="desc">
-                                        Заполните форму обратной связи, менеджеры Volvo Car АЛТУФЬЕВО свяжутся с Вами в ближайшее время
+                                        Заполните форму обратной связи, менеджеры Volvo Car Белгород свяжутся с Вами в ближайшее время
                                     </div>
                                     <form class="aj-form-send" id="form-c-<?=$arResult['ID']?>">
                                         <input type="hidden" name="ttl" value="Запрос на покупку в кредит со страницы (<?=$thi_pg?>)">
