@@ -146,19 +146,14 @@
 		(function(w,d,n,c){w.CalltouchDataObject=n;w[n]=function(){w[n]["callbacks"].push(arguments)};if(!w[n]["callbacks"]){w[n]["callbacks"]=[]}w[n]["loaded"]=false;if(typeof c!=="object"){c=[c]}w[n]["counters"]=c;for(var i=0;i<c.length;i+=1){p(c[i])}function p(cId){var a=d.getElementsByTagName("script")[0],s=d.createElement("script"),i=function(){a.parentNode.insertBefore(s,a)};s.type="text/javascript";s.async=true;s.src="https://mod.calltouch.ru/init.js?id="+cId;if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",i,false)}else{i()}}})(window,document,"ct","34xpqrmo");
 		</script>
 		<!-- calltouch -->
+
+		
 		<!-- StreamWood code -->
-		<link href="https://clients.streamwood.ru/StreamWood/sw.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="https://clients.streamwood.ru/StreamWood/sw.js" charset="utf-8"  data-skip-moving="true"></script>
-		<script type="text/javascript" data-skip-moving="true">
-			swQ(document).ready(function(){
-				swQ().SW({
-					swKey: '11b16a6e5eb412288305a170e325b810',
-					swDomainKey: 'a8dd8ffc6f08accd92c06f10afccfda0'
-				});
-				swQ('body').SW('load');
-			});
-		</script>
-		<!-- /StreamWood code -->
+<link href="https://clients.streamwood.ru/StreamWood/volvo/v1.css"; rel="stylesheet" type="text/css">
+<script defer src="https://clients.streamwood.ru/code?swKey=11b16a6e5eb412288305a170e325b810&swDomainKey=a8dd8ffc6f08accd92c06f10afccfda0"; charset="utf-8"></script>
+<!-- /StreamWood code -->
+
+
 	<?}?>
 
 
