@@ -220,7 +220,9 @@ $(".aj-form-send").submit(function() {
 });
 
 
-
+if(window.location.hash == '#services'){
+    CallForm(1220);
+}
 
 
 function CallForm(ids) {
