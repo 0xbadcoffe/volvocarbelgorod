@@ -219,11 +219,17 @@ $(".aj-form-send").submit(function() {
     return false;
 });
 
-
-if(window.location.hash == '#services'){
-    CallForm(1220);
+switch (window.location.hash) {
+    case '#services':
+        CallForm(1220);
+        break;
+    case '#offer':
+        CallForm(1218);
+        break;
+    case '#testdrive':
+        CallForm(1217);
+        break;
 }
-
 
 function CallForm(ids) {
     $('#af-' + ids).addClass('popup_active');
